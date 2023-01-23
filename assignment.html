@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #wholePage {
+        border: 2px black solid;
+        padding: 15px;
+      }
+    </style>
+    <script src="./assignment.js"></script>
+    <title>Javascript Basic Assignment</title>
+  </head>
+  <body>
+    <div id="wholePage">
+      <table>
+        <tr>
+          <td>
+            <h3 style="font-size: 20px">Student Application</h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><b>Name</b></p>
+          </td>
+          <td>
+            <p><b>City</b></p>
+          </td>
+          <td>
+            <p><b>Fees</b></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" id="nameInput" />
+          </td>
+          <td>
+            <input type="text" style="margin-right: 10px" id="cityInput" />
+          </td>
+          <td>
+            <input type="text" style="margin-right: 10px" id="feesInput" />
+          </td>
+          <td>
+            <button type="button" id="submitBtn" onclick="addPress()">
+              Add/Save
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3 style="font-size: 20px">Student List</h3>
+          </td>
+        </tr>
+        <tr>
+          <table
+            border="2px"
+            style="border-collapse: collapse"
+            id="studentListTable"
+          >
+            <tr>
+              <td style="padding: 20px">
+                <p>
+                  <b><center>No.</center></b>
+                </p>
+              </td>
+              <td style="padding: 20px">
+                <p>
+                  <b><center>Name</center></b>
+                </p>
+              </td>
+              <td style="padding: 20px">
+                <p>
+                  <b><center>City</center></b>
+                </p>
+              </td>
+              <td style="padding: 20px">
+                <p>
+                  <b><center>Fees</center></b>
+                </p>
+              </td>
+              <td style="padding: 20px">
+                <p>
+                  <b><center>Action</center></b>
+                </p>
+              </td>
+            </tr>
+            <div id="tableDiv"></div>
+          </table>
+        </tr>
+
+        <h3 style="font-size: 20px">Statistics</h3>
+
+        <p>1. Total fees: <span id="totalFees">0</span></p>
+
+        <p>
+          2. Total number of students: <span id="totalNumberOfStudents">0</span>
+        </p>
+
+        <p>
+          3. Number of students whose name starts from “R”:
+          <span id="totalStudentsWithR">0</span>
+        </p>
+
+        <p>
+          4. City name of 4th student:
+          <span id="nameOf4thStudent">N/A</span>
+        </p>
+
+        <p>
+          5. Total fees of 3rd and 5th student:
+          <span id="feesOf3rdAnd5th">0</span>
+        </p>
+
+        <p>
+          6. Number of students whose fees is in between $2000 and $3900:
+
+          <span id="feesBetween2And39">0</span>
+        </p>
+
+        <p>
+          7. Number of students whose fees is &lt; $1000:
+          <span id="feesLessThan1">0</span>
+        </p>
+        <p>
+          8. Number of students whose name starts from “S” AND City name starts
+          from “Ch”:
+
+          <span id="numberOfStudentsAnd">0</span>
+        </p>
+
+        <p>
+          9. Number of students whose name starts from “J” OR City name starts
+          from “H”:
+
+          <span id="numberOfStudentsOr">0</span>
+        </p>
+
+        <p>
+          10. Find the Min and Max fees:
+          <span id="minFees">Min Fees = 0 ,</span>
+          <span id="maxFees">Max Fees = NaN</span>
+        </p>
+      </table>
+    </div>
+  </body>
+</html>
